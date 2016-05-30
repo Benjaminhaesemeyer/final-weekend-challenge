@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="col-md-2">
+      <button class="btn btn-default btn-lg" ><a href="#pets">Back to Search</a></button>
+  </div>
+  <div class="col-md-8"></div>
+  <div class="col-md-2">
+    <button class="btn btn-default btn-lg fav-count">&#9825; {{favoriteCount}}</button>
+  </div>
+</div>
+
+
+
+  <div class="container">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th>ID</th>
+          <th>Description</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="pet in favorites">
+          <td><img ng-src="{{pet.imageURL}}"></td>
+          <td class="idCell">{{pet.petName}}</td>
+          <td class="idCell">{{pet.petID}}</td>
+          <td class="descCell">{{pet.description}}</td>
+          <td><button class="btn btn-primary btn-md" ng-click="deleteFavorite(pet._id)">Remove</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- <div class="fav-pet-container">
+  <div class="col-md-3"><img ng-src="{{pet.imageURL}}"></img></div>
+  <div class="col-md-1"></div>
+  <div class="col-md-8">
+    <h2>{{pet.petName}}</h2>
+    <h4>ID: {{pet.petID}}</h4>
+    <p>{{pet.description}}</p>
+    <button ng-click="deleteFavorite(pet._id)">Remove Pet</button>
+  </div>
+ </div> -->

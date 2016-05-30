@@ -1,0 +1,129 @@
+
+
+h1 {
+  text-align: center;
+  color: whitesmoke;
+  background-color: seagreen;
+  padding: 20px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+}
+
+h2 {
+  color: slategrey;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+h4 {
+  text-align: right;
+}
+
+
+.container {
+  text-align: left;
+}
+
+.container ul {
+  text-align: center;
+}
+
+
+.container select {
+  width: 150px;
+}
+
+li {
+list-style-type: none;
+margin: 20px;
+padding: 10px;
+}
+
+.fav-pet-container {
+  margin: 30px;
+}
+
+.selected-pet-container {
+padding: 50px;
+}
+
+.table table-hover{
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.btn {
+  background-color: seagreen;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+}
+
+.btn:hover {
+  background-color: whitesmoke;
+  color: seagreen;
+  transition: .5s;
+  border: 1px solid seagreen;
+
+}
+
+select {
+  height: 45px;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a:hover {
+  color: seagreen;
+  text-decoration: none;
+}
+
+.fav-count {
+  margin-left: 80px;
+}
+
+.click-count {
+  margin-left: 80px;
+}
+
+.fav-count:hover{
+  background-color: seagreen;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+  cursor: not-allowed;
+}
+
+span {
+  font-size: 30px;
+}
+
+.idCell {
+ width: 100px;
+ text-align: left;
+}
+
+.heartCell {
+ width: 115px;
+ text-align: left;
+}
+
+.descCell {
+ width: 500px;
+}
+
+.featured-container {
+  margin-top: 50px;
+  border: 3px solid seagreen;
+  padding: 20px;
+}
+
+.col-md-12 {
+  margin-top: 50px;
+}
+
+table tr{
+   padding: 20px;
+}

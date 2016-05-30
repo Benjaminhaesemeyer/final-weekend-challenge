@@ -1,0 +1,19 @@
+{
+  "name": "final-weekend-challenge",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "author": "joseph.mielzarek@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "angular-route": "^1.5.5",
+    "body-parser": "^1.15.1",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "description": ""
+}
