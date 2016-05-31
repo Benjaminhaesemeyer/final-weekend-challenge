@@ -3,9 +3,9 @@ var Schema = mongoose.Schema;
 
 var PetSchema = new Schema({
   petID: { type: String, required: true, index: { unique: true } },
-  petName: String,
-  imageURL: String,
-  description: String
+  petName: {type: String},
+  imageURL: {type: String},
+  description: {type: String}
 });
 
 var Pet = mongoose.model('Pet', PetSchema);

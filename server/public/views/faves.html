@@ -15,14 +15,14 @@
       <thead>
         <tr>
           <th></th>
-          <th>Name</th>
+          <th ng-model="Name">Name</th>
           <th>ID</th>
           <th>Description</th>
           <th></th>
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="pet in favorites">
+        <tr ng-repeat="pet in favorites | filter: Name">
           <td><img ng-src="{{pet.imageURL}}"></td>
           <td class="idCell">{{pet.petName}}</td>
           <td class="idCell">{{pet.petID}}</td>

@@ -5,7 +5,16 @@ myApp.controller('PetsController', ['$scope', '$http', function($scope, $http){
   var baseURL = 'http://api.petfinder.com/';
 
   // Populate Drop-down
-  $scope.types = ["barnyard", "bird", "cat", "dog", "horse", "pig", "reptile", "smallfurry"];
+  $scope.types = [
+    {type: "barnyard", label: "Farm Animals" },
+    {type: "bird", label: "Birds" },
+    {type: "cat", label: "Cats" },
+    {type: "dog", label: "Dogs" },
+    {type: "horse", label: "Horses" },
+    {type: "pig", label: "Pigs" },
+    {type: "reptile", label: "Reptile" },
+    {type: "smallfurry", label: "Small & Furry" }
+  ];
   $scope.favorites = [];
   var currentPet = {};
 
@@ -41,7 +50,7 @@ myApp.controller('PetsController', ['$scope', '$http', function($scope, $http){
     currentPet.petID = $scope.animal.id.$t;
     currentPet.petName = $scope.animal.name.$t;
     currentPet.imageURL = $scope.animal.media.photos.photo[3].$t;
-    currentPet.description = $scope.animal.description.$t;
+    currentPet.description = $scope.animal.description.$t.substring(0, 100);
 
     console.log(currentPet);
 
@@ -56,7 +65,7 @@ myApp.controller('PetsController', ['$scope', '$http', function($scope, $http){
   $scope.getRandomPet = function() {
     var query = 'pet.getRandom';
     query += '?key=' + key;
-    query += '&animal=' + $scope.selectedType;
+    query += '&animal=' + $scope.selectedType.type;
     query += '&output=basic';
     query += '&format=json';
 

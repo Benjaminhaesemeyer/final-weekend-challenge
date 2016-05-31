@@ -1,4 +1,6 @@
-
+body {
+  background-color: whitesmoke;
+}
 
 h1 {
   text-align: center;
@@ -116,9 +118,10 @@ span {
 
 .featured-container {
   margin-top: 50px;
-  border: 3px solid seagreen;
+  border: 10px solid seagreen;
   padding: 20px;
   margin-bottom: 50px;
+  border-radius: 5px;
 }
 
 .col-md-12 {
@@ -127,4 +130,8 @@ span {
 
 table tr{
    padding: 20px;
+}
+
+span {
+  font-weight: 300;
 }
